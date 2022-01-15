@@ -1,0 +1,198 @@
+#body{
+    background-image: url(https://source.unsplash.com/random/);
+    background-size: cover;
+}
+#header{
+    display: flex;
+    justify-content: center;
+    font-size: 4rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    backdrop-filter: blur(20px);
+    box-shadow: 0px 3px 51px 9px;
+    position: relative;
+    top: -8px;
+    color: cornsilk;
+    width: 85rem;
+    z-index: 2;
+}
+/* Animation of header starts here */
+#anihead{
+    
+    font-size: 2rem;
+    position: absolute;
+    z-index: 1;
+    width: 15rem;
+    padding: 12px;
+    background-color: #d57a0a;
+    animation-name: headloop;
+    animation-duration: 1ms;
+    animation-iteration-count: infinite;
+}
+#anihead2{
+    
+    font-size: 2rem;
+    position: absolute;
+    z-index: 1;
+    width: 15rem;
+    padding: 12px;
+    background-color: rgb(255, 255, 255);
+    animation-name: headloop2;
+    animation-duration: 1ms;
+    animation-iteration-count: infinite;
+}
+@keyframes headloop{
+    0%{
+        left:20px;
+    }
+    50%{
+        left:65rem;
+    }
+    100%{
+        left:50px;
+    }
+    
+    
+}
+@keyframes headloop2{
+    0%{
+        left:20px;
+    }
+    50%{
+        left:78rem;
+    }
+    100%{
+        left:200px;
+    }
+    
+    
+}
+.navbar li{
+    list-style: none;
+    
+}
+.navbar ul{
+    display: flex;
+    background-color: #ffffff08;
+    position: relative;
+    top: -12px;
+    justify-content: center;
+}
+.navbar ul li{
+    padding-inline-end: 1rem;
+ 
+}
+.navbar ul a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-family: cursive;
+}
+.navbar ul a:hover{
+    transition-duration: .2s;
+    color: burlywood;
+}
+
+/* SERVICES PANEL THING STARTS */
+.servicepanel{
+    background-color: #123e2c2e;
+    width: 21rem;
+    position: relative;
+    left: 40px;
+    border-radius: 19px;
+    float: left;
+    margin: 1rem;
+    height: 27rem;
+    backdrop-filter: blur(16px);
+    box-shadow: -9px 6px 23px 2px;
+}
+.displaypanel{
+    background-color: #123e2c2e;
+    width: 21rem;
+    position: relative;
+    left: 40px;
+    border-radius: 19px;
+    float: left;
+    margin: 1rem;
+    height: 27rem;
+    backdrop-filter: blur(16px);
+    box-shadow: -9px 6px 23px 2px;
+    width: 56rem;
+}
+.displaypanel h2{
+    color: rgb(255, 255, 255);
+    position: relative;
+    font-family: cursive;
+    display: flex;
+    justify-content: center;
+    cursor: default;
+}
+.servicepanel h2{
+    color: rgb(255, 255, 255);
+    position: relative;
+    left: 8rem;
+    font-family: cursive;
+    cursor: default;
+    
+}
+.servicepanel ul{
+    list-style: none;
+    border-width: 10px;
+
+
+}
+.servicepanel ul li{
+    background-color: #cf18b8a6;
+    padding: 20px;
+    border-width: 10px;
+    margin: inherit;
+    border-radius: 20px;
+    position: relative;
+    right: 17px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: cursive;
+    font-size: larger;
+    transition : 0.3s ease-in-out;
+}
+.servicepanel ul li:hover{
+    background-color: #ffffff;
+    transition : 0.3s ease-in-out;
+    transform: scale(1.1);
+    color: black;
+    cursor: default;
+}
+
+/* Display objects */
+#para1{
+
+    width: 52rem;
+    position: relative;
+    left: 26px;
+    font-size: 29px;
+    color: azure;
+}
+/* Footer starts here */
+#footer{
+    position: relative;
+    bottom: -3rem;
+    display: flex;
+    justify-content: center;
+    width: 84rem;
+    color: white;
+    font-size: 18px;
+    font-family: monospace;
+    background: #54155273;
+}
+
+/* Extra features of site */
+
+#dark{
+    width: 40px;
+    height: 40px;
+    position: relative;
+    bottom: 37rem;
+    left: 79rem;
+    z-index: 3;
+    cursor: pointer;
+}
