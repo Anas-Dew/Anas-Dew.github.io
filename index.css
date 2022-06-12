@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
+
+.body {
+    @apply bg-slate-900 flex h-screen items-center justify-center flex-col;
+}
 @tailwind utilities;
