@@ -1,1 +1,8 @@
 node_modules
+index_d.html
+index.css
+index.js
+package-lock.json
+package.json
+postcss.config.js
+tailwind.config.js
