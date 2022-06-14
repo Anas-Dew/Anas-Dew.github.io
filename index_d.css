@@ -4,4 +4,10 @@
 .body {
     @apply bg-slate-900 flex h-screen items-center justify-center flex-col;
 }
+.namehead {
+    @apply text-6xl mr-[9rem] text-white my-12 mx-60 font-mono hover:text-slate-600 active:text-slate-400;
+}
+.introlines {
+    @apply text-xl text-white font-mono hover:text-slate-600;
+}
 @tailwind utilities;
