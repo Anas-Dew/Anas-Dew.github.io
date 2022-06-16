@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&display=swap');
+
+@tailwind base;
+@tailwind components;
+
+.body {
+    @apply bg-slate-900 flex h-screen items-center justify-center flex-col;
+}
+
+.namehead {
+    @apply transition text-6xl text-white my-7 mx-24 hover:text-slate-600 active:text-slate-400 duration-200;
+}
+
+.introlines {
+    @apply transition text-xl text-white font-mono hover:text-slate-600 duration-300;
+}
+
+.footer {
+    @apply flex text-white justify-center my-12 font-mono;
+}
+
+@layer components {
+    .namehead {
+        @apply font-sans
+    }
+}
+
+@tailwind utilities;
