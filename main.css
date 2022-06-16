@@ -1,10 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300&family=Mulish&display=swap');
 
 @tailwind base;
 @tailwind components;
 
-.body {
+/* .body {
     @apply bg-slate-900 flex h-screen items-center justify-center flex-col;
+} */
+.main-div {
+    @apply flex justify-center flex-col space-y-9 mx-[21.25rem] w-[29rem] self-center ml-[10rem];
 }
 
 .namehead {
@@ -15,13 +19,39 @@
     @apply transition text-xl text-white font-mono hover:text-slate-600 duration-300;
 }
 
+.social-icon {
+    @apply transition w-10 h-10 mt-[-16px] cursor-pointer hover:bg-slate-200 duration-150;
+}
+
 .footer {
     @apply flex text-white justify-center my-12 font-mono;
 }
 
+/* ------PORTFOLIO ITEMS CLASS------------ */
+.item-div {
+    @apply flex flex-col;
+}
+
+.item-image {
+    @apply w-[20rem] h-[20rem];
+}
+
+.item-title {
+    @apply font-mono text-white text-xl font-semibold my-4;
+}
+
+.item-description {
+    @apply text-white font-mono text-base hover:bg-slate-700;
+}
+.item-action-button {
+    @apply text-white bg-gradient-to-r from-teal-400 via-teal-500 to-teal-600 hover:bg-gradient-to-br focus:ring-1 focus:outline-none focus:ring-teal-300 dark:focus:ring-teal-800 shadow-lg shadow-teal-500/50 dark:shadow-lg dark:shadow-teal-800/80 font-karla rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2;
+}
+/* ------PORTFOLIO ITEMS CLASS END------------ */
+
 @layer components {
     .namehead {
-        @apply font-sans
+        /* @apply font-mulish; */
+        @apply font-karla;
     }
 }
 

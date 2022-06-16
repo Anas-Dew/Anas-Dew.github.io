@@ -4,7 +4,9 @@ module.exports = {
   theme: {
     fontFamily : {
       'sans' : ['Fira sans'],
-      'mono' : ['monospace']
+      'mono' : ['monospace'],
+      'karla' : ['Karla', 'sans-serif'],
+      'mulish' : ['Mulish','sans-serif']
     },
     screens:{
       'mobile': "400px"
