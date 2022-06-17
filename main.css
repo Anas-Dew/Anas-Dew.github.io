@@ -1,22 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@300&family=Mulish&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cinzel:wght@800&family=Fredericka+the+Great&family=Ingrid+Darling&family=Joan&family=Reggae+One&family=Rubik+Glitch&family=Tapestry&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2&display=swap');
 @tailwind base;
 @tailwind components;
 
-/* .body {
-    @apply bg-slate-900 flex h-screen items-center justify-center flex-col;
-} */
+.body-beauty {
+    @apply bg-[#3e039b] flex h-screen flex-col;
+}
+
+.navi-div {
+    @apply flex place-content-evenly;
+}
 .main-div {
     @apply flex justify-center flex-col space-y-9 mx-[21.25rem] w-[29rem] self-center ml-[10rem];
 }
 
+.title-of-page {
+    @apply introlines text-4xl underline-offset-[7px];
+}
 .namehead {
-    @apply transition text-6xl text-white my-7 mx-24 hover:text-slate-600 active:text-slate-400 duration-200;
+    @apply transition text-6xl text-white hover:first-letter:text-blue-400 my-7 mx-24 mb-[2.75rem] duration-200;
 }
 
 .introlines {
-    @apply transition text-xl text-white font-mono hover:text-slate-600 duration-300;
+    @apply transition text-xl text-white font-joan hover:shadow-lg duration-300;
 }
 
 .social-icon {
@@ -44,15 +52,17 @@
     @apply text-white font-mono text-base hover:bg-slate-700;
 }
 .item-action-button {
-    @apply text-white bg-gradient-to-r from-teal-400 via-teal-500 to-teal-600 hover:bg-gradient-to-br focus:ring-1 focus:outline-none focus:ring-teal-300 dark:focus:ring-teal-800 shadow-lg shadow-teal-500/50 dark:shadow-lg dark:shadow-teal-800/80 font-karla rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2;
+    @apply text-white bg-gradient-to-r from-teal-400 via-teal-500 to-teal-600 hover:bg-gradient-to-br focus:ring-1 focus:outline-none focus:ring-teal-300 dark:focus:ring-teal-800 shadow-lg shadow-teal-500/50 dark:shadow-lg dark:shadow-teal-800/80 font-karla rounded-3xl text-sm px-5 py-2.5 text-center mr-2 mb-2;
 }
 /* ------PORTFOLIO ITEMS CLASS END------------ */
 
 @layer components {
     .namehead {
-        /* @apply font-mulish; */
-        @apply font-karla;
+        @apply font-tapestry;
     }
+    /* .introlines {
+        @apply font-baloo 2;
+    } */
 }
 
 @tailwind utilities;
