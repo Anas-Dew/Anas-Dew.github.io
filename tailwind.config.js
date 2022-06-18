@@ -17,9 +17,6 @@ module.exports = {
       'tapestry': ['Tapestry', 'cursive'],
       'baloo 2' : ['Baloo Chettan 2', 'cursive']
     },
-    screens:{
-      'mobile': "400px"
-    },
     extend: {},
   },
   plugins: [],

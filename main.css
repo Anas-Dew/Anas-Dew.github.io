@@ -7,11 +7,16 @@
 
 .body-beauty {
     @apply bg-black flex h-screen flex-col;
-    /* @apply bg-[#3e039b] flex h-screen flex-col; */
 }
 
 .navi-div {
     @apply flex place-content-evenly;
+}
+.namehead {
+    @apply transition text-6xl text-white hover:first-letter:text-blue-400 my-7 mx-24 mb-[2.75rem] duration-200;
+}
+.navi-bar {
+    @apply flex space-x-9 text-white items-center font-mono text-lg font-semibold;
 }
 .main-div {
     @apply flex justify-center flex-col space-y-9 mx-[21.25rem] w-[29rem] self-center ml-[10rem];
@@ -19,9 +24,6 @@
 
 .title-of-page {
     @apply introlines text-4xl underline-offset-[7px];
-}
-.namehead {
-    @apply transition text-6xl text-white hover:first-letter:text-blue-400 my-7 mx-24 mb-[2.75rem] duration-200;
 }
 
 .introlines {
@@ -59,14 +61,40 @@
     @apply  text-white bg-gradient-to-r from-gray-800 via-gray-900 to-black hover:bg-gradient-to-br focus:ring-1 focus:outline-none focus:ring-black dark:focus:ring-gray-900 shadow-lg shadow-gray-500/50 dark:shadow-lg dark:shadow-gray-800/80 font-karla rounded-3xl text-sm px-5 py-2.5 text-center mr-2 mb-2;
 }
 /* ------PORTFOLIO ITEMS CLASS END------------ */
+/* --------ABOUT PAGE SPECIFIC CSS------------ */
+.pic-and-desc-div {
+    @apply flex flex-row w-[46rem] mt-[5rem];
+}
 
+
+/* --------ABOUT PAGE SPECIFIC CSS END------------ */
 @layer components {
     .namehead {
         @apply font-tapestry;
     }
-    /* .introlines {
-        @apply font-baloo 2;
-    } */
 }
 
 @tailwind utilities;
+/* --------------------mobile screen settings------------------------------- */
+@media screen and (max-width: 600px){
+    .namehead{
+        margin-left: 0px;
+        margin-right: 0px;
+        font-size: 2em;
+    }
+    .navi-bar{
+        display:none;
+    }
+    .main-div {
+        margin-left: 0px;
+        margin-right: 0px;
+        width:21rem;
+    }
+    .introlines{
+        font-size: larger;
+    }
+    /* ------------------------- */
+    .pic-and-desc-div {
+        @apply flex flex-col-reverse m-[10px] w-[18rem] mt-[5rem];
+    }
+}
