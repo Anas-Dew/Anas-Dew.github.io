@@ -2,16 +2,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@300&family=Mulish&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cinzel:wght@800&family=Fredericka+the+Great&family=Ingrid+Darling&family=Joan&family=Reggae+One&family=Rubik+Glitch&family=Tapestry&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2&display=swap');
+
+#luckypage {
+    display : none;
+}
+
+video {
+    @apply object-cover z-[-1] w-[100vw] h-[100vh] fixed top-0 left-0;
+  }
+
 @tailwind base;
 @tailwind components;
 
 .body-beauty {
-    @apply bg-black flex h-screen flex-col ;
+    @apply bg-black flex h-screen flex-col backdrop-brightness-100;
 }
 
 .navi-div {
     @apply flex place-content-evenly;
 }
+
 .namehead {
     @apply transition text-6xl text-white hover:first-letter:text-blue-400 my-7 mx-24 mb-[2.75rem] duration-200;
 }
@@ -77,47 +87,26 @@
 @tailwind utilities;
 /* --------------------mobile screen settings------------------------------- */
 @media screen and (max-width: 600px){
+    video {
+        display : none; 
+    }
+    .navi-div {
+        @apply flex-col;
+    }
     .namehead{
-        margin-left: 0px;
-        margin-right: 0px;
-        font-size: 2em;
+        @apply ml-0 mr-0 self-center text-[49px];
     }
     .navi-bar{
-        display:none;
+        @apply text-[11px] justify-center;
     }
     .main-div {
-        margin-left: 0px;
-        margin-right: 0px;
-        width:21rem;
+        @apply ml-0 mr-0 w-[21rem];
     }
     .introlines{
-        font-size: larger;
+        @apply text-[larger];
     }
     /* ------------------------- */
     .pic-and-desc-div {
         @apply flex flex-col-reverse m-[10px] w-[18rem] mt-[5rem];
     }
 }
-#navbar {
-    background-color: #333; /* Black background color */
-    position: fixed; /* Make it stick/fixed */
-    top: -50px; /* Hide the navbar 50 px outside of the top view */
-    width: 100%; /* Full width */
-    transition: top 0.3s; /* Transition effect when sliding down (and up) */
-  }
-  
-  /* Style the navbar links */
-  #navbar a {
-    float: left;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 15px;
-    text-decoration: none;
-  }
-  
-  #navbar a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  
