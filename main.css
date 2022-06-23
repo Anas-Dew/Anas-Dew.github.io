@@ -2,6 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@300&family=Mulish&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cinzel:wght@800&family=Fredericka+the+Great&family=Ingrid+Darling&family=Joan&family=Reggae+One&family=Rubik+Glitch&family=Tapestry&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
+@keyframes slide-right{0%{transform:translateX(0)}100%{transform:translateX(100px)}}
+.slide-right{animation:slide-right 1s cubic-bezier(.25,.46,.45,.94) both}
 
 #luckypage {
     display : none;
@@ -23,7 +27,7 @@ video {
 }
 
 .namehead {
-    @apply transition text-6xl text-white hover:first-letter:text-blue-400 my-7 mx-24 mb-[2.75rem] duration-200;
+    @apply transition text-6xl text-white hover:first-letter:text-blue-400 my-7 mx-24 mb-[2.75rem] duration-200 ;
 }
 .navi-bar {
     @apply flex space-x-9 text-white items-center font-mono text-lg font-semibold;
@@ -80,15 +84,15 @@ video {
 /* --------ABOUT PAGE SPECIFIC CSS END------------ */
 @layer components {
     .namehead {
-        @apply font-tapestry;
+        @apply font-sacramento;
     }
 }
 
 @tailwind utilities;
 /* --------------------mobile screen settings------------------------------- */
-@media screen and (max-width: 600px){
+@media screen and (max-width: 883px){
     video {
-        display : none; 
+        @apply rotate-90 mt-[14rem] scale-[1.8];
     }
     .navi-div {
         @apply flex-col;
@@ -107,6 +111,9 @@ video {
     }
     /* ------------------------- */
     .pic-and-desc-div {
-        @apply flex flex-col-reverse m-[10px] w-[18rem] mt-[5rem];
+        @apply flex flex-col-reverse w-[18rem] mt-[5rem];
+    }
+    .pic-and-desc-div > p{
+        @apply mt-[4rem];
     }
 }

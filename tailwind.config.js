@@ -15,7 +15,7 @@ module.exports = {
       'raggae': ['Reggae One', 'cursive'],
       'glitch': ['Rubik Glitch', 'cursive'],
       'tapestry': ['Tapestry', 'cursive'],
-      'baloo 2' : ['Baloo Chettan 2', 'cursive']
+      'sacramento' : ['Sacramento', 'cursive']
     },
     extend: {},
   },
