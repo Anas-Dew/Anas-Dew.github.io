@@ -32,6 +32,9 @@ video {
 .navi-bar {
     @apply flex space-x-9 text-white items-center font-mono text-lg font-semibold;
 }
+.navi-items {
+    @apply transition ease-in-out hover:text-green-400 hover:-translate-y-2 duration-500;
+}
 .main-div {
     @apply flex justify-center flex-col space-y-9 mx-[21.25rem] w-[29rem] self-center ml-[10rem];
 }
@@ -72,7 +75,7 @@ video {
     @apply  text-white bg-gradient-to-r from-teal-400 via-teal-500 to-teal-600 hover:bg-gradient-to-br focus:ring-1 focus:outline-none focus:ring-teal-300 dark:focus:ring-teal-800 shadow-lg shadow-teal-500/50 dark:shadow-lg dark:shadow-teal-800/80 font-karla rounded-3xl text-sm px-5 py-2.5 text-center mr-2 mb-2;
 }
 .item-secondry-action-button {
-    @apply  text-white bg-gradient-to-r from-gray-800 via-gray-900 to-black hover:bg-gradient-to-br focus:ring-1 focus:outline-none focus:ring-black dark:focus:ring-gray-900 shadow-lg shadow-gray-500/50 dark:shadow-lg dark:shadow-gray-800/80 font-karla rounded-3xl text-sm px-5 py-2.5 text-center mr-2 mb-2;
+    @apply  text-white font-karla text-sm px-5 py-2.5 text-center mr-2 mb-2;
 }
 /* ------PORTFOLIO ITEMS CLASS END------------ */
 /* --------ABOUT PAGE SPECIFIC CSS------------ */
